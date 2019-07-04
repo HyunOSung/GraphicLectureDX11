@@ -1,15 +1,15 @@
 #pragma once
 
-#include<d3d11.h>
-#include<d3dcompiler.h>
-#include<DirectXMath.h>
+#include <d3d11.h>
+#include <d3dcompiler.h>
+#include <DirectXMath.h>
 
 #pragma comment(lib, "d3d11.lib")
-#pragma comment(lib, "d3dcompiler.lib") //속성->링커, 디렉토리에서 라이브러리를 설정할 수 있음
+#pragma comment(lib, "d3dcompiler.lib")
 
 namespace Memory
 {
-	template<class T> void SafeRelease(T& t) //C#이나 자바의 제네릭이 여기서 옴
+	template <class T> void SafeRelease(T& t)
 	{
 		if (t)
 		{
@@ -18,7 +18,7 @@ namespace Memory
 		}
 	}
 
-	template<class T>void SafeDelete(T& t)
+	template <class T> void SafeDelete(T& t)
 	{
 		if (t)
 		{
@@ -27,7 +27,8 @@ namespace Memory
 		}
 	}
 
-	template<class T>void SafeDeleteArray(T& t)
+	// 배열 메모리 해제용.
+	template <class T> void SafeDeleteArray(T& t)
 	{
 		if (t)
 		{
@@ -37,5 +38,5 @@ namespace Memory
 	}
 }
 
-//오류 확인용 함수.
-bool isError(HRESULT hr, LPCTSTR msg);
+// 오류 확인용 함수.
+bool IsError(HRESULT hr, LPCTSTR msg);
