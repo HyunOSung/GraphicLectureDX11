@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{349FFBD2-6074-4453-90DE-564A5155F6ED}</ProjectGuid>
+    <ProjectGuid>{52FCE03C-FB4A-4B59-887C-16D265B731B5}</ProjectGuid>
     <RootNamespace>DXEngine01WinSetup</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

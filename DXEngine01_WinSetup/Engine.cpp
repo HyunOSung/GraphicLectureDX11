@@ -1,15 +1,13 @@
 #include "Engine.h"
 
-
-
-Engine::Engine(HINSTANCE hinstance)
-	:DXApp(hinstance)
+Engine::Engine(HINSTANCE hinstance) : DXApp(hinstance)
 {
-}
 
+}
 
 Engine::~Engine()
 {
+
 }
 
 int Engine::Run()
@@ -20,9 +18,7 @@ int Engine::Run()
 bool Engine::Init()
 {
 	if (DXApp::Init() == false)
-	{
 		return false;
-	}
 
 	return true;
 }

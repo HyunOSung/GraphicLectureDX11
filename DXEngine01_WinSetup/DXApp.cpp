@@ -1,15 +1,10 @@
 #include "DXApp.h"
 
-
-
 DXApp::DXApp(HINSTANCE hinstance)
 {
-	//扩档快 按眉 积己.
+	// 扩档快 按眉 积己.
 	window = new AppWindow(hinstance);
-
-
 }
-
 
 DXApp::~DXApp()
 {
@@ -18,10 +13,8 @@ DXApp::~DXApp()
 
 bool DXApp::Init()
 {
-	if (window->initializeWindow() == false)
-	{
+	if (window->InitializeWindow() == false)
 		return false;
-	}
 
 	return true;
 }

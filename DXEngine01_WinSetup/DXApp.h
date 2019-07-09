@@ -1,7 +1,6 @@
 #pragma once
 
-#include"AppWindow.h"
-
+#include "AppWindow.h"
 
 class DXApp
 {
@@ -14,10 +13,7 @@ public:
 	virtual void Update() = 0;
 	virtual void Render() = 0;
 
-
 protected:
 
 	AppWindow* window;
-
 };
-
