@@ -8,9 +8,13 @@ Engine::Engine(HINSTANCE hinstance) : DXApp(hinstance)
 Engine::~Engine()
 {
 	Memory::SafeDelete(mesh);
-
+	Memory::SafeDelete(mesh2);
+	
 	material->Release();
-	Memory::SafeRelease(material);
+	material2->Release();
+
+	Memory::SafeRelease(material);	
+	Memory::SafeRelease(material2);
 
 	Memory::SafeRelease(constantBuffer);
 
@@ -44,10 +48,13 @@ bool Engine::Init()
 
 void Engine::Update()
 {
-	// 월드 행렬 바인딩.
-	mesh->Update(deviceContext);
+	//// 월드 행렬 바인딩.
+	//mesh->Update(deviceContext);
+	//mesh2->Update(deviceContext);
 
-	// 뷰/투영 행렬 바인딩.
+	//
+
+	//// 뷰/투영 행렬 바인딩.
 	deviceContext->VSSetConstantBuffers(1, 1, &constantBuffer);
 }
 
@@ -61,20 +68,44 @@ void Engine::Render()
 	// 뎁스/스텐실 뷰 지우기.
 	deviceContext->ClearDepthStencilView(depthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 
+	// 월드 행렬 바인딩.
+	mesh->Update(deviceContext);
+	material->BindeShaders(deviceContext);
+	material->BindeTexture(deviceContext);
+	material->BindSamplerState(deviceContext);
+	mesh->RenderBuffers(deviceContext);
+
+
+	mesh2->Update(deviceContext);
+	material2->BindeShaders(deviceContext);
+	material2->BindeTexture(deviceContext);
+	material2->BindSamplerState(deviceContext);
+	mesh2->RenderBuffers(deviceContext);
+	// 뷰/투영 행렬 바인딩.
+	//deviceContext->VSSetConstantBuffers(1, 1, &constantBuffer);
+
+
 	// 셰이더 바인딩.
 	//vertexShader->BindShader(deviceContext);
 	//pixelShader->BindShader(deviceContext);
-	material->BindeShaders(deviceContext);
+	
+	
 
 	// 텍스처/샘플러 스테이트 바인딩.
 	//pixelShader->BindTexture(deviceContext);
 	//pixelShader->BindSamplerState(deviceContext);
-	material->BindeTexture(deviceContext);
-	material->BindSamplerState(deviceContext);
+	
+	
+	
+	
+	
 
 
 	// 메시 버퍼 그리기.
-	mesh->RenderBuffers(deviceContext);
+	
+
+	
+
 
 	// 백버퍼 <-> 프론트 버퍼 교환.
 	swapChain->Present(1, 0);
@@ -118,9 +149,15 @@ bool Engine::InitializeScene()
 
 	//머티리얼 객체 생성
 	material = new Material(TEXT("Shader//Toon"));
+	material2 = new Material(TEXT("Shader//Toon"));
 
 	//머티리얼 컴파일
 	if (material->CompileShaders(device) == false)
+	{
+		return false;
+	}	
+	
+	if (material2->CompileShaders(device) == false)
 	{
 		return false;
 	}
@@ -129,14 +166,25 @@ bool Engine::InitializeScene()
 	if (material->CreateShaders(device) == false)
 	{
 		return false;
+	}	
+	
+	if (material2->CreateShaders(device) == false)
+	{
+		return false;
 	}
 
 	//텍스쳐 관련 처리
 	//텍스쳐 추가
 	material->AddTexture(TEXT("Resources/Textures/earth.jpg"));
+	material2->AddTexture(TEXT("Resources/Textures/earth.jpg"));
 
 	//텍스쳐 로드
 	if (material->LoadTexture(device) == false)
+	{
+		return false;
+	}	
+	
+	if (material2->LoadTexture(device) == false)
 	{
 		return false;
 	}
@@ -145,8 +193,14 @@ bool Engine::InitializeScene()
 	// 메쉬 생성.
 	//mesh = new Mesh(0.0f, 0.0f, 0.0f);
 	mesh = new Mesh("Resources/Models/Sphere.FBX");
-	mesh->SetPosition(0.0f, 0.0f, 0.0f);
+	mesh->SetPosition(-70.0f, 0.0f, 0.0f);
 	mesh->SetRotation(-90.0f, 0.0f, 0.0f);
+	mesh->SetScale(1.0f, 1.0f, 1.0f);
+
+	mesh2 = new Mesh("Resources/Models/Sphere.FBX");
+	mesh2->SetPosition(70.0f, 0.0f, 0.0f);
+	mesh2->SetRotation(-90.0f, 0.0f, 0.0f);
+	mesh2->SetScale(0.5f, 0.5f, 0.5f);
 
 	//// 초기화.
 	//if (mesh->InitializeBuffers(device, vertexShader->GetShaderBuffer())
@@ -154,6 +208,10 @@ bool Engine::InitializeScene()
 	//	return false;	
 	
 	if (mesh->InitializeBuffers(device, material)
+		== false)
+		return false;	
+	
+	if (mesh2->InitializeBuffers(device, material)
 		== false)
 		return false;
 

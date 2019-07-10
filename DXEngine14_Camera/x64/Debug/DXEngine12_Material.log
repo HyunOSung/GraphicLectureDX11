@@ -1,0 +1,62 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(DXEngine09_Diffuse.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  AppWindow.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(73): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(74): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  DXApp.cpp
+  DXUtil.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\dxutil.cpp(5): error C2664: 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> &)': 인수 1을(를) 'LPCTSTR'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\dxutil.cpp(5): note: 소스 형식을 가져올 수 있는 생성자가 없거나 생성자 오버로드 확인이 모호합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\dxutil.cpp(6): error C2676: 이항 '+': 'std::wstring'이(가) 이 연산자를 정의하지 않거나 미리 정의된 연산자에 허용되는 형식으로의 변환을 정의하지 않습니다.
+  Engine.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(73): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(74): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainApp.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(73): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(74): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Material.cpp
+  Mesh.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(73): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(74): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\library\fbxloader.h(8): fatal error C1083: 포함 파일을 열 수 없습니다. 'fbxsdk.h': No such file or directory
+  PixelShader.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\pixelshader.cpp(26): error C2664: 'errno_t wcscpy_s(wchar_t *,rsize_t,const wchar_t *)': 인수 1을(를) 'TCHAR [128]'에서 'wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\pixelshader.cpp(30): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\pixelshader.cpp(34): error C2664: 'HRESULT D3DCompileFromFile(LPCWSTR,const D3D_SHADER_MACRO *,ID3DInclude *,LPCSTR,LPCSTR,UINT,UINT,ID3DBlob **,ID3DBlob **)': 인수 1을(를) 'LPCTSTR'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\pixelshader.cpp(36): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\pixelshader.cpp(50): error C2664: 'HRESULT D3DReadFileToBlob(LPCWSTR,ID3DBlob **)': 인수 1을(를) 'LPCTSTR'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\pixelshader.cpp(50): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+  Shader.cpp
+  Texture.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(73): error C2664: 'errno_t _wsplitpath_s(const wchar_t *,wchar_t *,size_t,wchar_t *,size_t,wchar_t *,size_t,wchar_t *,size_t)': 인수 1을(를) 'LPCTSTR'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(78): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(81): error C2664: 'int wcscmp(const wchar_t *,const wchar_t *)': 인수 1을(를) 'TCHAR [10]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(81): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(82): error C2664: 'int wcscmp(const wchar_t *,const wchar_t *)': 인수 1을(를) 'TCHAR [10]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(82): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(83): error C2664: 'HRESULT DirectX::LoadFromTGAFile(const wchar_t *,DirectX::TexMetadata *,DirectX::ScratchImage &)': 인수 1을(를) 'LPCTSTR'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(83): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(85): error C2664: 'int wcscmp(const wchar_t *,const wchar_t *)': 인수 1을(를) 'TCHAR [10]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(85): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(86): error C2664: 'int wcscmp(const wchar_t *,const wchar_t *)': 인수 1을(를) 'TCHAR [10]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(86): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(87): error C2664: 'HRESULT DirectX::LoadFromDDSFile(const wchar_t *,DWORD,DirectX::TexMetadata *,DirectX::ScratchImage &)': 인수 1을(를) 'LPCTSTR'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(87): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(90): error C2664: 'HRESULT DirectX::LoadFromWICFile(const wchar_t *,DWORD,DirectX::TexMetadata *,DirectX::ScratchImage &,std::function<void (IWICMetadataQueryReader *)>)': 인수 1을(를) 'LPCTSTR'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\texture.cpp(90): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+  Vertex.cpp
+  VertexShader.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\vertexshader.cpp(27): error C2664: 'errno_t wcscpy_s(wchar_t *,rsize_t,const wchar_t *)': 인수 1을(를) 'TCHAR [128]'에서 'wchar_t *'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\vertexshader.cpp(31): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\vertexshader.cpp(35): error C2664: 'HRESULT D3DCompileFromFile(LPCWSTR,const D3D_SHADER_MACRO *,ID3DInclude *,LPCSTR,LPCSTR,UINT,UINT,ID3DBlob **,ID3DBlob **)': 인수 1을(를) 'LPCTSTR'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\vertexshader.cpp(35): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\vertexshader.cpp(48): error C2664: 'HRESULT D3DReadFileToBlob(LPCWSTR,ID3DBlob **)': 인수 1을(를) 'LPCTSTR'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\vertexshader.cpp(48): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+  FBXLoader.cpp
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(73): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\engine\mesh.h(74): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\hyun o sung\desktop\personal\unreal lecture\graphics lecture\graphiclecturedx11\dxengine12_material\library\fbxloader.h(8): fatal error C1083: 포함 파일을 열 수 없습니다. 'fbxsdk.h': No such file or directory
+  코드를 생성하고 있습니다...
