@@ -1,0 +1,3 @@
+﻿C:\Users\Hyun O Sung\Desktop\personal\Unreal Lecture\Graphics Lecture\Instructor Sample\DXEngine\DXEngine08_FBXLoader\Shader\PS.fx(13,29-39): error X4502: invalid vs_2_0 output semantic 'SV_TARGET'
+  
+  compilation failed; no code produced
