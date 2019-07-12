@@ -98,7 +98,7 @@ void Engine::Render()
 	// 차례대로 해줘야 제대로 돌아간다. 한쪽이 처리가 안되었는데 처리를 하려고 하면 렌더링이 되지 않는다.
 	mesh->Update(deviceContext);
 	material->BindeShaders(deviceContext);
-	material->BindeTexture(deviceContext);
+	material->BindeTextures(deviceContext);
 	material->BindSamplerState(deviceContext);
 	mesh->RenderBuffers(deviceContext);
 
@@ -107,7 +107,7 @@ void Engine::Render()
 
 	mesh2->Update(deviceContext);
 	material2->BindeShaders(deviceContext);
-	material2->BindeTexture(deviceContext);
+	material2->BindeTextures(deviceContext);
 	material2->BindSamplerState(deviceContext);
 	mesh2->RenderBuffers(deviceContext);
 
@@ -209,12 +209,12 @@ bool Engine::InitializeScene()
 	material2->AddTexture(TEXT("Resources/Textures/earth.jpg"));
 
 	//텍스쳐 로드
-	if (material->LoadTexture(device) == false)
+	if (material->LoadTextures(device) == false)
 	{
 		return false;
 	}
 
-	if (material2->LoadTexture(device) == false)
+	if (material2->LoadTextures(device) == false)
 	{
 		return false;
 	}

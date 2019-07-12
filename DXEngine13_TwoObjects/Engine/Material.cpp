@@ -61,7 +61,7 @@ void Material::AddTexture(LPCTSTR fileName)
 	pixelShader->AddTexture(fileName);
 }
 
-bool Material::LoadTexture(ID3D11Device * device)
+bool Material::LoadTextures(ID3D11Device * device)
 {
 	if (pixelShader->LoadTexture(device) == false)
 	{
@@ -71,7 +71,7 @@ bool Material::LoadTexture(ID3D11Device * device)
 	return true;
 }
 
-void Material::BindeTexture(ID3D11DeviceContext * deviceContext)
+void Material::BindeTextures(ID3D11DeviceContext * deviceContext)
 {
 	pixelShader->BindTexture(deviceContext);
 

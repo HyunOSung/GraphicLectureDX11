@@ -17,8 +17,8 @@ public:
 	void BindeShaders(ID3D11DeviceContext* deviceContext);
 
 	void AddTexture(LPCTSTR fileName);
-	bool LoadTexture(ID3D11Device* device);
-	void BindeTexture(ID3D11DeviceContext* deviceContext);
+	bool LoadTextures(ID3D11Device* device);
+	void BindeTextures(ID3D11DeviceContext* deviceContext);
 
 	bool CreateSamplerState(ID3D11Device* device);
 	void BindSamplerState(ID3D11DeviceContext* deviceContext);

@@ -71,14 +71,14 @@ void Engine::Render()
 	// 월드 행렬 바인딩.
 	mesh->Update(deviceContext);
 	material->BindeShaders(deviceContext);
-	material->BindeTexture(deviceContext);
+	material->BindeTextures(deviceContext);
 	material->BindSamplerState(deviceContext);
 	mesh->RenderBuffers(deviceContext);
 
 
 	mesh2->Update(deviceContext);
 	material2->BindeShaders(deviceContext);
-	material2->BindeTexture(deviceContext);
+	material2->BindeTextures(deviceContext);
 	material2->BindSamplerState(deviceContext);
 	mesh2->RenderBuffers(deviceContext);
 	// 뷰/투영 행렬 바인딩.
@@ -179,12 +179,12 @@ bool Engine::InitializeScene()
 	material2->AddTexture(TEXT("Resources/Textures/earth.jpg"));
 
 	//텍스쳐 로드
-	if (material->LoadTexture(device) == false)
+	if (material->LoadTextures(device) == false)
 	{
 		return false;
 	}	
 	
-	if (material2->LoadTexture(device) == false)
+	if (material2->LoadTextures(device) == false)
 	{
 		return false;
 	}

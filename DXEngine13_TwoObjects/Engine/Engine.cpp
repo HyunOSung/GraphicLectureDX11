@@ -87,10 +87,10 @@ void Engine::Render()
 	// 텍스처/샘플러 스테이트 바인딩.
 	//pixelShader->BindTexture(deviceContext);
 	//pixelShader->BindSamplerState(deviceContext);
-	material->BindeTexture(deviceContext);
+	material->BindeTextures(deviceContext);
 	material->BindSamplerState(deviceContext);	
 	
-	material2->BindeTexture(deviceContext);
+	material2->BindeTextures(deviceContext);
 	material2->BindSamplerState(deviceContext);
 
 
@@ -172,12 +172,12 @@ bool Engine::InitializeScene()
 	material2->AddTexture(TEXT("Resources/Textures/earth.jpg"));
 
 	//텍스쳐 로드
-	if (material->LoadTexture(device) == false)
+	if (material->LoadTextures(device) == false)
 	{
 		return false;
 	}	
 	
-	if (material2->LoadTexture(device) == false)
+	if (material2->LoadTextures(device) == false)
 	{
 		return false;
 	}
