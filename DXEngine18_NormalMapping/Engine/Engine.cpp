@@ -230,8 +230,8 @@ bool Engine::InitializeScene()
 	//	return false;
 
 	//머티리얼 객체 생성
-	material = new Material(TEXT("Shader//Specular"));
-	material2 = new Material(TEXT("Shader//NormalMapping"));
+	material = new Material(TEXT("Shader//NormalMapping2"));
+	material2 = new Material(TEXT("Shader//NormalMapping2"));
 
 	//머티리얼 컴파일
 	if (material->CompileShaders(device) == false)
@@ -257,9 +257,12 @@ bool Engine::InitializeScene()
 
 	//텍스쳐 관련 처리
 	//텍스쳐 추가
+	
 	material->AddTexture(TEXT("Resources/Textures/T_Chr_FPS_D.png"));
 	material->AddTexture(TEXT("Resources/Textures/T_Chr_FPS_N.png"));
+	
 	material2->AddTexture(TEXT("Resources/Textures/T_Chr_FPS_D.png"));
+	material2->AddTexture(TEXT("Resources/Textures/T_Chr_FPS_N.png"));
 
 	//텍스쳐 로드
 	if (material->LoadTextures(device) == false)
@@ -276,14 +279,14 @@ bool Engine::InitializeScene()
 	// 메쉬 생성.
 	//mesh = new Mesh(0.0f, 0.0f, 0.0f);
 	mesh = new Mesh("Resources/Models/HeroTPP.FBX");
-	mesh->SetPosition(70.0f, 0.0f, 0.0f);
-	mesh->SetRotation(-90.0f, 0.0f, 0.0f);
-	mesh->SetScale(1.2f, 1.2f, 1.2f);
+	mesh->SetPosition(70.0f, -90.0f, 0.0f);
+	mesh->SetRotation(-90.0f, 180.0f, 0.0f);
+	mesh->SetScale(1.0f, 1.0f, 1.0f);
 
 	mesh2 = new Mesh("Resources/Models/HeroTPP.FBX");
-	mesh2->SetPosition(-70.0f, 0.0f, 0.0f);
-	mesh2->SetRotation(-90.0f, 0.0f, 0.0f);
-	mesh2->SetScale(0.5f, 0.5f, 0.5f);
+	mesh2->SetPosition(-70.0f, -90.0f, 0.0f);
+	mesh2->SetRotation(-90.0f, 180.0f, 0.0f);
+	mesh2->SetScale(1.0f, 1.0f, 1.0f);
 
 	//// 초기화.
 	//if (mesh->InitializeBuffers(device, vertexShader->GetShaderBuffer())
@@ -294,7 +297,7 @@ bool Engine::InitializeScene()
 		== false)
 		return false;
 
-	if (mesh2->InitializeBuffers(device, material)
+	if (mesh2->InitializeBuffers(device, material2)
 		== false)
 		return false;
 
