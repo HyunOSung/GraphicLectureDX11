@@ -45,6 +45,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXEngine20_RasterizerState"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXEngine21_CubeMap", "DXEngine21_CubeMap\DXEngine21_CubeMap.vcxproj", "{429F0EAD-6680-42D6-A273-590789521ACC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXEngine22_RimLighting", "DXEngine22_RimLighting\DXEngine22_RimLighting.vcxproj", "{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DXEngine23_OrenNayerDiffuse", "DXEngine23_OrenNayerDiffuse\DXEngine23_OrenNayerDiffuse.vcxproj", "{8164BA09-2851-44B7-AD75-D124456D65EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +225,22 @@ Global
 		{429F0EAD-6680-42D6-A273-590789521ACC}.Release|x64.Build.0 = Release|x64
 		{429F0EAD-6680-42D6-A273-590789521ACC}.Release|x86.ActiveCfg = Release|Win32
 		{429F0EAD-6680-42D6-A273-590789521ACC}.Release|x86.Build.0 = Release|Win32
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Debug|x64.ActiveCfg = Debug|x64
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Debug|x64.Build.0 = Debug|x64
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Debug|x86.ActiveCfg = Debug|Win32
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Debug|x86.Build.0 = Debug|Win32
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Release|x64.ActiveCfg = Release|x64
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Release|x64.Build.0 = Release|x64
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Release|x86.ActiveCfg = Release|Win32
+		{68904F44-5AB9-4EEA-9E41-31CA9C2FA395}.Release|x86.Build.0 = Release|Win32
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Debug|x64.ActiveCfg = Debug|x64
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Debug|x64.Build.0 = Debug|x64
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Debug|x86.Build.0 = Debug|Win32
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Release|x64.ActiveCfg = Release|x64
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Release|x64.Build.0 = Release|x64
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Release|x86.ActiveCfg = Release|Win32
+		{8164BA09-2851-44B7-AD75-D124456D65EC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

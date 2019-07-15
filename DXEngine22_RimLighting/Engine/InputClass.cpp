@@ -1,0 +1,36 @@
+#include "InputClass.h"
+
+
+
+InputClass::InputClass()
+{
+	keyboard = new Keyboard();
+	mouse = new Mouse();
+}
+
+
+InputClass::~InputClass()
+{
+	Memory::SafeDelete(keyboard);
+	Memory::SafeDelete(mouse);
+}
+
+bool InputClass::InitializeInput(HWND hwnd)
+{
+	mouse->SetWindow(hwnd);
+	mouse->SetMode(Mouse::Mode::MODE_RELATIVE);
+
+	return true;
+}
+
+XMFLOAT2 InputClass::GetMouseDragState()
+{
+	Mouse::State state = mouse->GetState();
+	return XMFLOAT2(state.x, state.y);
+}
+
+Mouse::State InputClass::GetMouseState()
+{
+	//단순히 상태를 넘기는 게 아니라 마우스의 상태를 넘겨줘야 정보를 받을 수 있다.
+	return mouse->GetState();
+}
