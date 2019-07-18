@@ -230,10 +230,11 @@ bool Engine::InitializeScene()
 	LPCTSTR cubeMappingShader = TEXT("Shader/CubeMapping");
 	LPCTSTR rimShader = TEXT("Shader/Rim");
 	LPCTSTR orenNayerDiffuseShader = TEXT("Shader/OrenNayer");
+	LPCTSTR cookTorranceShader = TEXT("Shader/CookTorrance");
 
 
 	Mesh* tppRim = new Mesh(
-		fbxTPP, orenNayerDiffuseShader,
+		fbxTPP, cookTorranceShader,
 		D3D11_FILL_SOLID, D3D11_CULL_NONE
 	);
 	tppRim->SetPosition(0.0f, -90.0f, 0.0f);

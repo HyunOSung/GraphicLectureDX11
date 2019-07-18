@@ -187,6 +187,7 @@
     <ClInclude Include="Library\FBXLoader.h" />
     <ClInclude Include="Library\Keyboard.h" />
     <ClInclude Include="Library\Mouse.h" />
+    <ClInclude Include="Shader\Lightings.fx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shader\ToonPS.fx">
@@ -216,6 +217,16 @@
       <FileType>Document</FileType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
     </None>
+    <FxCompile Include="Shader\CookTorrancePS.fx">
+      <FileType>Document</FileType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Shader\CookTorranceVS.fx">
+      <FileType>Document</FileType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+    </FxCompile>
     <FxCompile Include="Shader\CubeMappingPS.fx">
       <FileType>Document</FileType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
