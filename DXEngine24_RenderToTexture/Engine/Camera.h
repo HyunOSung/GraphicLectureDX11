@@ -23,7 +23,6 @@ public:
 	XMVECTOR GetCameraLook() const { return cameraLook; }
 	XMVECTOR GetCameraUp() const { return cameraUp; }
 
-
 	//Setter
 	void SetAspectRatio(UINT width, UINT height);
 
